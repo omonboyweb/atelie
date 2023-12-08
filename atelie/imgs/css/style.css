@@ -1,0 +1,397 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Old Standard TT";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/old-standard-tt-v18-latin_latin-ext-regular.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Old Standard TT";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/old-standard-tt-v18-latin_latin-ext-700.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+body {
+  background: #181511;
+}
+
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+.navbar {
+  height: 80px;
+  background: #181511;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-left a {
+  color: #aca592;
+}
+
+.link {
+  color: #aca592;
+  font-family: Old Standard TT;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  /* 218.182% */
+  text-transform: uppercase;
+  margin-right: 40px;
+}
+
+.navbar-left img {
+  width: 75px;
+  margin: 28px;
+}
+
+.button {
+  color: #ffae2b;
+  text-align: center;
+  font-family: Old Standard TT;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  text-transform: uppercase;
+  border: 1px solid #ffae2b;
+  background: none;
+  padding: 15px 25px;
+  margin-left: 430px;
+}
+
+.button:hover {
+  background-color: #ffae2b;
+  color: #fff;
+}
+
+.header {
+  height: calc(100vh - 80px);
+  background-image: url(../imgs/site-bacground.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-content {
+  text-align: center;
+}
+
+.header-title {
+  color: #ffae2b;
+  text-align: center;
+  font-family: Old Standard TT;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  /* 183.333% */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.heder-title-about {
+  color: #fff;
+  text-align: center;
+  font-family: Old Standard TT;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 80px;
+  /* 114.286% */
+  letter-spacing: 1px;
+}
+
+.header-btn {
+  display: inline-block;
+  color: #181511;
+  text-align: center;
+  font-family: Old Standard TT;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  /* 200% */
+  text-transform: uppercase;
+  padding: 14px 24px;
+  background: #ffae2b;
+  margin: 35px;
+  cursor: pointer;
+  border: none;
+}
+
+.header-btn:active {
+  opacity: 0.7;
+}
+
+.main {
+  margin-top: 120px;
+  padding-bottom: 121px;
+}
+
+.suptitle {
+  color: #aca592;
+  text-align: center;
+  font-family: Old Standard TT;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  /* 183.333% */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.main-title {
+  color: #ffae2b;
+  text-align: center;
+  font-family: Old Standard TT;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 70px;
+  /* 116.667% */
+  margin-top: 10px;
+}
+
+.main-row {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 19px;
+}
+
+.card {
+  max-width: 387px;
+  height: 315px;
+  flex-shrink: 0;
+  border: 1px solid #4b4136;
+  padding: 41px;
+  display: inline-block;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card p {
+  color: #fff;
+  font-family: Old Standard TT;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  /* 176.923% */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.hero {
+  width: 100%;
+  max-width: 1220px;
+  height: 752px;
+  flex-shrink: 0;
+  background-color: #181511;
+}
+
+.hero-sup-title {
+  color: #aca592;
+  text-align: center;
+  font-family: Old Standard TT;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  /* 183.333% */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.site-hero-title {
+  color: #ffae2b;
+  text-align: center;
+  font-family: Old Standard TT;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 70px;
+  /* 116.667% */
+  padding: 10px;
+}
+
+.site-card {
+  padding: 60px;
+}
+
+.h1 {
+  color: #ffae2b;
+  font-family: Old Standard TT;
+  font-size: 29px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  /* 137.931% */
+}
+
+.text {
+  color: #aca592;
+  font-family: Old Standard TT;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  /* 173.333% */
+  margin-top: 20px;
+}
+
+.text2 {
+  color: #aca592;
+  font-family: Old Standard TT;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  /* 236.364% */
+  margin-bottom: 5px;
+}
+
+.site-card {
+  max-width: 400px;
+  height: 350px;
+  flex-shrink: 0;
+  border: 1px solid #4b4136;
+  margin-top: 60px;
+}
+
+.card-border {
+  max-width: 250px;
+  height: 228px;
+  flex-shrink: 0;
+}
+
+/* .card-border img {
+  margin-bottom: 20px;
+} */
+
+.card-wrap {
+  display: flex;
+  gap: 20px;
+}
+
+.site-link {
+  /* max-width: 1200px; */
+  /* height: 282px; */
+  flex-shrink: 0;
+  padding: 21px 0px;
+}
+
+.insta-logo {
+  position: relative;
+  top: -219px;
+  right: -138px;
+}
+
+.link-card {
+  display: flex;
+}
+
+.followme {
+  color: #FFAE2B;
+  font-family: Old Standard TT;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  /* 125% */
+  position: relative;
+  top: -245px;
+  right: -25px;
+}
+
+.card-instasvg {
+  margin-top: 20px;
+  margin: 0 auto;
+  padding: 2px;
+  max-width: 200px;
+  height: 200px;
+  flex-shrink: 0;
+  display: flex;
+  margin: 20px 40px;
+
+}
+
+.followme-button {
+  width: 122px;
+  height: 50px;
+  flex-shrink: 0;
+  background-color: #ffae2b;
+  position: relative;
+  bottom: 110px;
+  right: -80px;
+  z-index: -199999;
+  border: none;
+}
+
+.followme-button p {
+  color: #181511;
+  text-align: center;
+  font-family: Old Standard TT;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  /* 200% */
+  text-transform: uppercase;
+}
+
+.cart-one {
+  display: flex;
+  width: 100%;
+  height: 240px;
+}
